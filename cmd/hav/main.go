@@ -20,8 +20,8 @@ func main() {
 	}
 
 	for _, server := range auction.Server {
-		fmt.Printf("name='%s' cpu='%s' ram='%d' price='%s' text='%s'\n",
-			server.Name, server.CPU, server.RAM, server.Price, server.Freetext)
+		fmt.Printf("key='%d' name='%s' cpu='%s' ram='%d' price='%s' text='%s'\n",
+			server.Key, server.Name, server.CPU, server.RAM, server.Price, server.Freetext)
 	}
 }
 

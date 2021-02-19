@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "cwd": "${workspaceFolder}",
+    "tasks": [
+        {
+            "label": "Build",
+            "command": "make",
+            "args": [],
+            "group": "build",
+            "type": "shell",
+            "problemMatcher": [
+                "$go"
+            ]
+        },
+        {
+            "label": "Clean",
+            "command": "make",
+            "args": [
+                "clean"
+            ],
+            "group": "build",
+            "type": "shell",
+            "problemMatcher": [
+                "$go"
+            ]
+        },
+        {
+            "label": "Run",
+            "command": "bin/hav",
+            "args": [
+                "server"
+            ],
+            "group": "build",
+            "type": "shell",
+            "dependsOn": [
+                "Build"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
